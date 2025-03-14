@@ -1,0 +1,16 @@
+%SIGNAL
+PIN  23 =  BCLK 
+PIN   1 =  PCLK 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+BCLK.d  =>
+    BCLK
+
+BCLK.oe  =>
+    1 
+
+%END

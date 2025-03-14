@@ -1,0 +1,27 @@
+Name      breakout;
+Partno    ;
+Date      04/12/24;
+Revision  01;
+Designer  Malcolm Harrow;
+Company   Malcolm Harrow, MIT License;
+Assembly  None;
+Location  None;
+Device    g22V10;
+
+/****************************************************************/
+/*                                                              */
+/* Create the bus clock from the processor clock -- div by 2    */
+/*                                                              */
+/****************************************************************/
+
+/**  Inputs  **/
+
+PIN 1           = PCLK;
+
+/**  Outputs  **/
+
+PIN 23          = BCLK;
+
+/** Logic Equations **/
+
+BCLK.D = !BCLK;
